@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,14 @@ namespace UserMaintenance
 				FullName = textBox1.Text,				
 			};
 			users.Add(u);
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+
+			SaveFileDialog sf = new SaveFileDialog();
+			
+			File.WriteAllText(sf.FileName, users.ToString());
 		}
 	}
 }
