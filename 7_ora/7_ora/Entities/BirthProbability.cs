@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _7_ora.Entities
 {
-	class BirthProbability
+	public class BirthProbability
 	{
 		public int Age { get; set; }
 		public int ChildCount { get; set; }
