@@ -46,10 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstractions\IToyFactory.cs" />
+    <Compile Include="Abstractions\Toy.cs" />
     <Compile Include="Entiities\Ball.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Entiities\BallFactory.cs" />
+    <Compile Include="Entiities\Car.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entiities\CarFactory.cs" />
+    <Compile Include="Entiities\Present.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entiities\PresentFactory.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +93,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
