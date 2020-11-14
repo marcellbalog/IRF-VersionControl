@@ -34,6 +34,15 @@ namespace _8_ora.Entiities
         {
             Left += 1;
         }
+
+        public SolidBrush BallColor { get; private set; }
+
+        public Ball(Color color)
+        {
+            BallColor = new SolidBrush(color);
+        }
+
+
     }
 
 }
